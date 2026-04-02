@@ -10,7 +10,12 @@ router.register('groups', GroupViewSet, basename='groups')
 
 comment_list = CommentViewSet.as_view({'get': 'list', 'post': 'create'})
 comment_detail = CommentViewSet.as_view(
-    {'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}
+    {
+        'get': 'retrieve',
+        'put': 'update',
+        'patch': 'partial_update',
+        'delete': 'destroy'
+    }
 )
 
 urlpatterns = [
