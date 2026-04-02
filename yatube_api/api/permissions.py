@@ -6,4 +6,3 @@ class IsAuthorOrReadOnly(BasePermission):
         if request.method in SAFE_METHODS:
             return True
         return getattr(obj, 'author', None) == request.user
-

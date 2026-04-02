@@ -19,4 +19,3 @@ urlpatterns = [
     path('v1/posts/<int:post_id>/comments/', comment_list),
     path('v1/posts/<int:post_id>/comments/<int:pk>/', comment_detail),
 ]
-
